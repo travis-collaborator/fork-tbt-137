@@ -14,8 +14,11 @@ jobs:
       script: true
 
 after_success:
-  - echo done
-  - echo $TRAVIS_TEST_RESULT
+  - echo passed
+  - echo $ACC_TEST_VAR
+  - echo $ACC_Unsecret
+  - echo $newVar
+  - echo $newUnsecretVar
 after_failure:
   - echo failed
   - echo $TRAVIS_TEST_RESULT
