@@ -16,6 +16,7 @@ jobs:
 after_success:
   - echo passed
   - echo $ACCOUNT_VAR
+  - echo $forkAccVar
 after_failure:
   - echo failed
   - echo $TRAVIS_TEST_RESULT
