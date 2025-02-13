@@ -15,7 +15,7 @@ jobs:
 
 after_success:
   - echo passed
-  - echo $OVERRIDE_VAR
+  - echo $ACCOUNT_VAR
 after_failure:
   - echo failed
   - echo $TRAVIS_TEST_RESULT
