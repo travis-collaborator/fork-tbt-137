@@ -1,5 +1,5 @@
 os: linux
-#test
+#test2
 language: java
 services:
   - docker
@@ -15,8 +15,8 @@ jobs:
 
 after_success:
   - echo passed
-  - echo $buildTesterTravisVar
-  - echo $travisCollaboratorVar
+  - echo $accSecretVar
+  - echo $accUnsecret
 after_failure:
   - echo failed
   - echo $TRAVIS_TEST_RESULT
