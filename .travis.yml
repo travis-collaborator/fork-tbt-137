@@ -15,8 +15,8 @@ jobs:
 
 after_success:
   - echo passed
-  - echo $ACCOUNT_VAR
-  - echo $forkAccVar
+  - echo $build-tester-travis-var
+  - echo $travis-collaborator-var
 after_failure:
   - echo failed
   - echo $TRAVIS_TEST_RESULT
